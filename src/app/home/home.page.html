@@ -7,4 +7,11 @@
 <ion-content [fullscreen]="true">
   <a routerLink="/about">About Page</a>
   <ion-button (click)="navigateForward()">Go to About Page</ion-button>
+  <ion-list>
+    <ion-button (click)="takePhoto()">Take a Phote</ion-button>
+    <ion-button (click)="showLocal()">Show Notifications</ion-button>
+  </ion-list>
+  <ion-card>
+    <img [src]="imageUrl" />
+  </ion-card>
 </ion-content>
